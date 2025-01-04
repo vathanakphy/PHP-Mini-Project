@@ -1,0 +1,109 @@
+* {
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+body {
+   background-color: hsl(148, 38%, 91%);
+   margin: 0;
+   padding: 0;
+}
+.forms-container {
+   background-image: linear-gradient(to right, #a445b2, #fa4299);
+   height: 100vh;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+h1 {
+   text-align: center;
+   margin-bottom: 15px;
+}
+.container{
+   background-color: white;
+   padding-top: 20px;
+}
+.form {
+   width: 40vh;
+   /* height: auto; */
+   border-radius: 5px;
+   display: none;
+   flex-direction: column;
+   align-items: center;
+   padding: 0 20px 20px 20px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.form.active {
+   display: flex;
+}
+.top-button {
+   display: flex;
+   justify-content: center;
+   column-gap: 20px;
+   
+}
+#login-button,
+#signup-button {
+   border: 0;
+   width: calc((0.86 / 2) * 40vh);
+   height: 40px;
+   border-radius: 5px;
+   font-weight: bold;
+   cursor: pointer;
+   transition: background-color 0.3s, color 0.3s;
+}
+#login-button {
+   background-image: linear-gradient(to right, #a445b2, #fa4299);
+   color: white;
+}
+#signup-button {
+   background-color: white;
+   border: 1px solid lightgrey;
+   color: #a445b2;
+}
+#login-button.active {
+   background-image: linear-gradient(to right, #a445b2, #fa4299);
+   color: white;
+}
+#signup-button.active {
+   background-image: linear-gradient(to right, #a445b2, #fa4299);
+   color: white;
+   border: 0;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+a {
+   display: block;
+   margin: 15px 0;
+   width: calc(0.86 * 40vh);
+   height: 35px;
+   border: 1px solid lightgrey;
+   border-radius: 5px;
+   padding: 0 10px;
+}
+a {
+   border: 0;
+   text-decoration: none;
+   color: #fa4299;
+}
+button[type="submit"] {
+   width: calc(0.86 * 40vh);
+   height: 40px;
+   border-radius: 5px;
+   border: 0;
+   color: white;
+   font-weight: bold;
+   background-image: linear-gradient(to right, #a445b2, #fa4299);
+   cursor: pointer;
+   margin-top: 10px;
+   transition: background-color 0.3s;
+}
+form p {
+   text-align: center;
+}
+form p a {
+   color: #fa4299;
+   display: inline;
+}
+
